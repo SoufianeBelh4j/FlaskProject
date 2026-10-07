@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Person</title>
+</head>
+<body>
+    <h1>Add a New Person</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.first_name.label }} {{ form.first_name(size=20) }}<br><br>
+        {{ form.last_name.label }} {{ form.last_name(size=20) }}<br><br>
+        {{ form.email.label }} {{ form.email(size=20) }}<br><br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
+
